@@ -1,0 +1,70 @@
+        .modal_overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(1.5px);
+        -webkit-backdrop-filter: blur(1.5px);
+        }
+
+        .modal_window {
+        background: white;
+        backdrop-filter: blur(13.5px);
+        -webkit-backdrop-filter: blur(13.5px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        width: 920px;
+        height: 570px;
+        position: relative;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        .signup{
+		display: flex;
+		padding: 30px;
+		flex-direction: column;
+		pointer-events: auto;
+		width: 450px;
+		height: 550px;
+		 }
+		.login{
+		display: flex;
+		padding: 30px;
+		flex-direction: column;
+		pointer-events: auto;
+		width: 450px;
+		height: 550px;
+		}
+		.signup_box{
+		display: flex;
+		border: 1px solid rgba(0,0,0,.2);
+		border-radius: 1.1rem;
+		outline: 0;
+		}
+		.logo{
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		}
+		.close{
+		display: flex;
+		position: absolute;
+        right: 0px;
+        cursor: pointer;
+		}
+
+        .mybtn{
+         border-radius:5px;
+         }
+        .form_group{
+        margin: 20px 0px;
+        font-size: 25px;
+        }

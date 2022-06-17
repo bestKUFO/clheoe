@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CLHEOE shop</title>
+    <!-- 웹폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome(폰트 아이콘) -->
+    <script src="https://kit.fontawesome.com/42bc809b80.js" crossorigin="anonymous"></script>
+    <!-- 구글 머트리얼 아이콘 -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+          rel="stylesheet">
+    <!-- bx slider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- JQuery -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- bx slider JS -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+
+</head>
+<body>
+<header id="main_header">
+    <div class="container">
+        <h1>
+            <a href="{% url 'main:base' %}">
+                <img src="{% static 'images/logo2.png' %}" alt="CLHEOE">
+            </a>
+        </h1>
+        <!-- 검색창 -->
+        <form id="search_box">
+            <input
+                    type="text"
+                    placeholder="Search"
+            >
+            <button type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+
+        <!-- 유틸리티 메뉴 -->
+        <nav id="util_menu">
+            <a href="#" id="add_feed"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#"><i class="fas fa-heart"></i></a>
+        </nav>
+    </div><!-- end container-->
+</header>
+
+<!-- 메인 GNB -->
+<nav id="main_gnb">
+    <div class="container">
+        <button id="category_btn">
+            <i class="fas fa-bars"></i>
+            <span>Category</span>
+        </button>
+
+        <ul>
+            <li><a href="#">W korea</a></li>
+            <li><a href="#">Perfume</a></li>
+            <li><a href="#">2022 S/S</a></li>
+            <li><a href="#">Best 10</a></li>
+            <li><a href="#">Coupon</a></li>
+            <li><a href="#">Membership</a></li>
+            <li><a href="#">event</a></li>
+            <li><a href="#">Trend</a></li>
+        </ul>
+    </div><!-- end container -->
+</nav>
+
+<!-- 카테고리 메뉴 목록 -->
+<nav id="category">
+    <div class="container">
+        <dl>
+            <dt>Perfume</dt>
+            <dd>Best</dd>
+            <dd>Campaign</dd>
+            <dd>Event</dd>
+        </dl>
+        <dl>
+            <dt>Body</dt>
+            <dd>Best</dd>
+            <dd>Campaign</dd>
+            <dd>Event</dd>
+        </dl>
+        <dl>
+            <dt>Basic</dt>
+            <dd>Best</dd>
+            <dd>Campaign</dd>
+            <dd>Event</dd>
+        </dl>
+    </div><!-- end container -->
+</nav>
+
+
+<!-- 메인 배너 -->
+<section id="main_banner">
+    <div class="inner">
+        <div class="bx-slider">
+            <img class="img_responsive" src="{% static 'images/banner1.jpg'%}" alt="1">
+            <img class="img_responsive" src="{% static 'images/banner2.jpg'%}" alt="2">
+            <img class="img_responsive" src="{% static 'images/banner3.jpg'%}" alt="3">
+        </div>
+    </div><!-- end inner -->
+</section>
+
+<!-- 메인 콘텐츠 -->
+<section id="top_seller">
+    <div class="container"><!-- end container-->
+        <h2>MAN's Brand</h2>
+        <ul class="best_list">
+            <li>
+                <a href="#">
+                    <div style="overflow: hidden; width:225px;height:323px;">
+                        <img src="https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_auto,fl_lossy,dpr_1.2/w_620/gabrielle-chanel-essence-eau-de-parfum-spray-3-4fl-oz--packshot-default-120630-8848376692766.jpg"
+                             alt="woman2"
+                             style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <span class="title">CLHEOE</span>
+                    <span class="name">OD PPLDM</span>
+                    <del class="origin_price"></del>
+                    <ins class="sale_price">475,200원</ins>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div style="overflow: hidden; width:225px;height:323px;">
+                        <img src="https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_auto,fl_lossy,dpr_1.2/w_620/gabrielle-chanel-essence-eau-de-parfum-spray-3-4fl-oz--packshot-default-120630-8848376692766.jpg"
+                             alt="woman2"
+                             style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <span class="title">CLHEOE</span>
+                    <span class="name">OH OLKDJ</span>
+                    <del class="origin_price"></del>
+                    <ins class="sale_price">480,000원</ins>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="{% static 'images/woman3.jpg'%}" alt="woman3">
+                    <span class="title">CLHEOE</span>
+                    <span class="name">OF LEON</span>
+                    <del class="origin_price"></del>
+                    <ins class="sale_price">560,000원</ins>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="{% static 'images/woman4.jpg'%}" alt="woman4">
+                    <span class="title">CLHEOE</span>
+                    <span class="name">OD UOND</span>
+                    <del class="origin_price"></del>
+                    <ins class="sale_price">100,000원</ins>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="{% static 'images/woman5.jpg'%}" alt="woman5">
+                    <span class="title">CLHEOE</span>
+                    <span class="name">OY WRAND</span>
+                    <del class="origin_price"></del>
+                    <ins class="sale_price">70,000원</ins>
+                </a>
+            </li>
+        </ul>
+        <!-- 225x323 -->
+
+
+    </div><!-- end container-->
+</section>
+
+<!-- woman's brand -->
+<section id="event">
+    <div class="container">
+        <h2>WOMAN's Brand</h2>
+        <ul class="best_list">
+            <li>
+                <a href="#">
+                    <div style="overflow: hidden; width:225px;height:323px;">
+                        <img src="https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_auto,fl_lossy,dpr_1.2/w_620/gabrielle-chanel-essence-eau-de-parfum-spray-3-4fl-oz--packshot-default-120630-8848376692766.jpg"
+                             alt="woman2"
+                             style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <span class="title">CLHEOE</span>
+                    <span class="name">GE COCO</span>
+                    <del class="origin_price"></del>
+                    <ins class="sale_price">530,000원</ins>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div style="overflow: hidden; width:225px;height:323px;">
+                        <img src="https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_auto,fl_lossy,dpr_1.2/w_620/gabrielle-chanel-essence-eau-de-parfum-spray-3-4fl-oz--packshot-default-120630-8848376692766.jpg"
+                             alt="woman2"
+                             style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <span class="title">CLHEOE</span>
+                    <span class="name">GE Extreme</span>
+                    <del class="origin_price"></del>
+                    <ins class="sale_price">500,000원</ins>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="{% static 'images/woman3.jpg'%}" alt="woman3">
+                    <span class="title">CLHEOE</span>
+                    <span class="name">GE Sport</span>
+                    <del class="origin_price"></del>
+                    <ins class="sale_price">410,000원</ins>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="{% static 'images/woman4.jpg'%}" alt="woman4">
+                    <span class="title">CLHEOE</span>
+                    <span class="name">GE ALLURE</span>
+                    <del class="origin_price"></del>
+                    <ins class="sale_price">990,000원</ins>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="{% static 'images/woman5.jpg'%}" alt="woman5">
+                    <span class="title">CLHEOE</span>
+                    <span class="name">GE Bleu</span>
+                    <del class="origin_price"></del>
+                    <ins class="sale_price">680,000원</ins>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+<!-- Basic -->
+<section id="brand">
+    <div class="container">
+        <h2>Basic</h2>
+        <ul>
+            <li>
+                <!-- 이미지는 배경으로 처리 -->
+                <a href="#">
+                   
+                    <i class="far fa-star"></i>
+                    <ul class="hash_tag">
+                        <li>#LAP</li>
+                        <li>#Season OFF</li>
+                        <li>#Clearance</li>
+                        <li>#50% Sale</li>
+                    </ul>
+                    <ul class="text">
+                        <li class="subject">Event</li>
+                        <li><h4>Kakao Event</h4></li>
+                        <li class="day">06.17~06.30</li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <!-- 이미지는 배경으로 처리 -->
+                <a href="#">
+                    
+                    <i class="far fa-star"></i>
+                    <ul class="hash_tag">
+                        <li>#European</li>
+                        <li>#Style</li>
+                        <li>#Trend</li>
+                        <li>#Fashion</li>
+                    </ul>
+                    <ul class="text">
+                        <li class="subject">Event</li>
+                        <li><h4>Special Chance</h4></li>
+                        <li class="day">06.17~06.22</li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <!-- 이미지는 배경으로 처리 -->
+                <a href="#">
+                   
+                    <i class="far fa-star"></i>
+                    <ul class="hash_tag">
+                        <li>#2022 ss</li>
+                        <li>#Global</li>
+                        <li>#Identity</li>
+                        <li>#Persona</li>
+                    </ul>
+                    <ul class="text">
+                        <li class="subject">Event</li>
+                        <li><h4>Event Date</h4></li>
+                        <li class="day">06.17~06.30</li>
+                    </ul>
+                </a>
+            </li>
+        </ul>
+    </div><!-- end container -->
+</section>
+
+<footer id="main_footer">
+    <div class="inner_wrap">
+        <dl class="footer_notice">
+            <dt>
+            <dt><a href="#">공지사항</a></dt>
+
+        </dl>
+        <ul class="icons">
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-facebook-square"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+        </ul>
+        <ul class="footer_menu">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">멤버십 이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">임직원서비스</a></li>
+            <li><a href="#">고객센터</a></li>
+        </ul>
+        <div class="footer_info">
+            <p class="text">CLHEOE | 서울특별시 수정구 경재로 100(경재로2가) | CLHEOE@shop.com | 080-759-7586(쇼핑문의) |
+                080-4567-7890(제품문의)</p>
+            
+            <p class="text">대표이사:조경재 | 사업자등록번호: 457-22-89623 | 통신판매업신고번호: 서울수정-4752호</p>
+            <p class="text2">개별 판매자가 입점하여 등록한 상품에 대한 광고, 상품주문, 배송,
+                환불의 의무와 책임은 각 입점판매자가 부담하고, 이에대하여 ㈜CLHEOE은 통신판매중개자로서<br>
+                통신판매의 당사자가 아니므로 일체 책임을 지지 않습니다.</p>
+            <p class="copyright">Copyright &copy; by CLHEOE. All right Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<div id="modal_add_feed" class="modal_overlay">
+    <div class="modal_window">
+        <div class="signup_box">
+            <div class="login">
+                <form class="login_form" method="post" action="index.html">
+                    <div class="logo">
+                        <h1>Login</h1>
+                    </div>
+                    <div class="form_group">
+                        <label for="name">Name</label><br>
+                        <input type="text" name="name" class="form-control" id="name"
+                               placeholder="Enter name" style="width:100%;height:30px;font-size:20px;margin-top: 10px;">
+                    </div>
+
+                    <div class="form_group">
+                        <label for="password">Password</label><br>
+                        <input type="password" name="password" id="password" class="form_control"
+                               placeholder="Enter Password"
+                               style="width:100%;height:30px;font-size:20px;margin-top: 10px;">
+                    </div>
+                    <div class="sign_btn" style="display:flex; justify-content: center;">
+                        <button type="submit" class="btn" style="width:80px; height: 30px; font-size:16px;">Login
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="signup">
+                <div class="logo">
+                    <div class="text_center">
+                        <h1>Signup</h1>
+                    </div>
+                    <div class="close">
+                        <span id="close_modal" class="material-icons-two-tone" style="font-size:30px;">close</span>
+                    </div>
+                </div>
+                <form action="#" name="registration">
+
+                    <div class="form_group">
+                        <label for="name">Name</label><br>
+                        <input type="text" name="name" class="form-control" id="name"
+                               placeholder="Enter name" style="width:100%;height:30px;font-size:20px;margin-top: 10px;">
+                    </div>
+                    <div class="form_group">
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" class="form-control" id="email"
+                               placeholder="Enter email"
+                               style="width:100%;height:30px;font-size:20px;margin-top: 10px;">
+                    </div>
+                    <div class="form_group">
+                        <label for="password">Password</label><br>
+                        <input type="password" name="password" id="password" class="form_control"
+                               placeholder="Enter Password"
+                               style="width:100%;height:30px;font-size:20px;margin-top: 10px;">
+                    </div>
+                    <div class="sign_btn" style="display:flex; justify-content: center;">
+                        <button type="submit" class="btn" style="width:80px; height: 30px; font-size:16px;">Sign Up
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+<script>
+    const modal = document.getElementById("modal_add_feed");
+    const buttonAddFeed = document.getElementById("add_feed");
+
+    buttonAddFeed.addEventListener("click", e => {
+        modal.style.display = "flex";
+        modal.style.top = window.pageYOffset + 'px';
+        document.body.style.overflowY = "hidden"; // 스크롤 없애기
+    });
+
+    const buttonCloseModal = document.getElementById("close_modal");
+        buttonCloseModal.addEventListener("click", e => {
+        modal.style.display = "none";
+        document.body.style.overflowY = "visible";
+    });
+
+
+</script>
+
+<script>
+
+  // data.js
+
+/* 제품 정보 데이터 */
+var product_data =[
+    {
+    // 속성 값
+    img_url: "images/man1.jpg",
+    title: "PENFIELD",
+    name: "로리엣 X 펜필드 더블 헤비울 퍼 코트_FK4WJ77M",
+    origin_price: "1,099,000",
+    sale_price: "879,200"
+    },
+    {
+    // 속성 값
+    img_url: "images/man2.jpg",
+    title: "PENFIELD",
+    name: "로리엣 X 펜필드 헤리티지 발마칸 코트_FK4WJ75M",
+    origin_price: "899,000",
+    sale_price: "719,200"
+    },
+    {
+    // 속성 값
+    img_url: "images/man3.jpg",
+    title: "PENFIELD",
+    name: "로리엣 X 펜필드 트위드 4 포켓 자켓_FK4WJ78M",
+    origin_price: "699,000",
+    sale_price: "559,200"
+    },
+    {
+    // 속성 값
+    img_url: "images/man4.jpg",
+    title: "PENFIELD",
+    name: "로리엣 X 펜필드 구스 숏다운 점퍼_FK4WD77M",
+    origin_price: "368,000",
+    sale_price: "214,800"
+    },
+    {
+    // 속성 값
+    img_url: "images/man5.jpg",
+    title: "PENFIELD",
+    name: "로리엣 X 펜필드 구스 다운 퍼 점퍼_FK4WD75M",
+    origin_price: "1,399,000",
+    sale_price: "1,119,200"
+    },
+];
+
+
+  // main.js
+$(function(){
+
+
+  // 상품리스트 추가
+  var item_list = $('.item_list');  //상품 목록 위치
+  var list = '';      // 삽입될 html , date
+  var list_num = 5;   // 상품목록 갯수
+  var kwd = '원';
+  var origin_price = '';
+
+
+  for(var i = 0; i < list_num; i++) {
+    list += '<li>';
+    list += '<a href="#">';
+    list += '<img src="' + product_data[i].img_url + '" >';
+    list += '<span class="title">' + product_data[i].title + '</span>';
+    list += '<span class="name">' + product_data[i].name + '</span>'
+
+
+  if(product_data[i].origin_price == "") {
+    kwd = "&nbsp;";
+    origin_price = "";
+  } else { origin_price = product_data[i].origin_price;}
+
+
+    list += '<del class="origin_price">' + origin_price + kwd + '</del>';
+    list += '<ins class="sale_price"><strong>' + product_data[i].sale_price + '원</strong></ins>';
+   }
+  item_list.append(list);
+
+
+
+
+
+   // 카테고리 토글 버튼
+
+  $('#category_btn').click(function(){
+    $('#category').slideToggle();
+  });
+
+  // 다른데 누르면 자동닫힘
+  $('header,section').click(function(){
+    $('#category').slideUp();
+  });
+
+
+
+
+
+  // BX 슬라이더
+  $('.bx-slider').bxSlider({
+    // 여기에 옵션 설정
+    mode: 'horizontal',     // 효과설정
+    auto: true,             // 자동재생
+    easing: "ease-in-out",  // 가속도(timing-function)
+    pause: 4000,            // 정지시간(대기)
+    controls: true,        // prev, next 표시/비표시
+    pager: true,           // 하단 인디케이터 표시/비표시
+    autoHover: true        // 마우스올라가면 재생정지
+  });
+
+});
+
+
+
+</script>
+</html>
