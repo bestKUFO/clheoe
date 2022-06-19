@@ -99,147 +99,37 @@
     </div><!-- end container -->
 </nav>
 
+<div style="position:relative;">
+    <div style="display:flex; text-align:center;justify-content: center;">
+        <div style="display:flex; flex-direction: row; width: 1200px;">
+            <div style="display:flex; flex-direction: column; width: 250px; height: 1000px; background-color: #fffbfb;">
+                <p style="margin:30px 0px;"><a href="{% url 'main:terms' %}"><b>공지사항</b></a></p>
+                <p style="margin:15px 0px;"><a href="{% url 'main:terms' %}">이용약관</a></p>
+                <p style="margin:15px 0px;"><a href="{% url 'main:membership' %}">멤버십 이용약관</a></p>
+                <p style="margin:15px 0px;"><a href="{% url 'main:privacy' %}">개인정보처리방침</a></p>
+                <p style="margin:15px 0px;"><a href="{% url 'main:executives' %}">임직원서비스</a></p>
+                <p style="margin:15px 0px;"><a href="{% url 'main:service' %}">고객센터</a></p>
+            </div>
+            <div style="display:flex; justify-content: center; width: 750px; background-color:#f2f2f1;">
+              <b>  채팅<br>
 
-<!-- 메인 배너 -->
-<section id="main_banner">
-    <div class="inner">
-        <div class="bx-slider">
-            <img class="img_responsive" src="{% static 'images/banner11.jpg'%}" alt="1">
-            <img class="img_responsive" src="{% static 'images/banner22.jpg'%}" alt="2">
-            <img class="img_responsive" src="{% static 'images/banner33.jpg'%}" alt="3">
+월~금: 9시~오후 8시<br>
+토: 10시~오후 4시<br>
+
+전화번호<br>
+
+080-498-4565<br>
+
+월~금: 9시~오후 8시<br>
+토: 10시~오후 4시<br>
+
+소셜 네트워크<br>
+
+@CLHEOE_CARE<br></b>
+
+            </div>
         </div>
-    </div><!-- end inner -->
-</section>
-
-<!-- 메인 콘텐츠 -->
-<section id="top_seller">
-    <div class="container"><!-- end container-->
-        <h2>MAN's</h2>
-        <ul class="best_list">
-            <li>
-                <a href="{% url 'main:item'%}">
-                    <div style="overflow: hidden; width:225px;height:323px;">
-                        <img src="{% static 'images/mp1.jpg'%}"
-                             alt="man1"
-                             style="width:100%;height:100%;object-fit:cover;">
-                    </div>
-                    <span class="title">CLHEOE</span>
-                    <span class="name">OD PPLDM</span>
-
-                    <ins class="sale_price">475,200원</ins>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div style="overflow: hidden; width:225px;height:323px;">
-                        <img src="{% static 'images/mp2.jpg'%}"
-                             alt="man2"
-                             style="width:100%;height:100%;object-fit:cover;">
-                    </div>
-                    <span class="title">CLHEOE</span>
-                    <span class="name">OH OLKDJ</span>
-                    <del class="origin_price"></del>
-                    <ins class="sale_price">480,000원</ins>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/mp3.jpg'%}" alt="man3">
-                    <span class="title">CLHEOE</span>
-                    <span class="name">OF LEON</span>
-                    <del class="origin_price"></del>
-                    <ins class="sale_price">560,000원</ins>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/mp4.jpg'%}" alt="man4">
-                    <span class="title">CLHEOE</span>
-                    <span class="name">OD UOND</span>
-                    <del class="origin_price"></del>
-                    <ins class="sale_price">100,000원</ins>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/mp5.jpg'%}" alt="man5">
-                    <span class="title">CLHEOE</span>
-                    <span class="name">OY WRAND</span>
-                    <del class="origin_price"></del>
-                    <ins class="sale_price">70,000원</ins>
-                </a>
-            </li>
-        </ul>
-        <!-- 225x323 -->
-
-
-    </div><!-- end container-->
-</section>
-
-<!-- woman's brand -->
-<section id="event">
-    <div class="container">
-        <h2>WOMAN's</h2>
-        <ul class="best_list">
-            <li>
-                <a href="#">
-                    <div style="overflow: hidden; width:225px;height:323px;">
-                        <img src="{% static 'images/wp1.jpg'%}"
-                             alt="woman1"
-                             style="width:100%;height:100%;object-fit:cover;">
-                    </div>
-                    <span class="title">CLHEOE</span>
-                    <span class="name">GE COCO</span>
-                    <del class="origin_price"></del>
-                    <ins class="sale_price">530,000원</ins>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div style="overflow: hidden; width:225px;height:323px;">
-                        <img src="{% static 'images/wp2.jpg'%}"
-                             alt="woman2"
-                             style="width:100%;height:100%;object-fit:cover;">
-                    </div>
-                    <span class="title">CLHEOE</span>
-                    <span class="name">GE Extreme</span>
-                    <del class="origin_price"></del>
-                    <ins class="sale_price">500,000원</ins>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/wp3.jpg'%}" alt="woman3">
-                    <span class="title">CLHEOE</span>
-                    <span class="name">GE Sport</span>
-                    <del class="origin_price"></del>
-                    <ins class="sale_price">410,000원</ins>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/wp4.jpg'%}" alt="woman4">
-                    <span class="title">CLHEOE</span>
-                    <span class="name">GE ALLURE</span>
-                    <del class="origin_price"></del>
-                    <ins class="sale_price">990,000원</ins>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/wp5.jpg'%}" alt="woman5">
-                    <span class="title">CLHEOE</span>
-                    <span class="name">GE Bleu</span>
-                    <del class="origin_price"></del>
-                    <ins class="sale_price">680,000원</ins>
-                </a>
-            </li>
-        </ul>
     </div>
-</section>
-<div>
-    <img src="{% static 'images/bottombg.jpg'%}"
-         style="margin:0px;padding:0px; width:100%; height:100%;">
 </div>
 
 
@@ -361,7 +251,6 @@
 
 
 
-
 </script>
 
 <script>
@@ -433,23 +322,10 @@ $(function(){
     $('#category').slideUp();
   });
 
-
-
-
-
-  // BX 슬라이더
-  $('.bx-slider').bxSlider({
-    // 여기에 옵션 설정
-    mode: 'horizontal',     // 효과설정
-    auto: true,             // 자동재생
-    easing: "ease-in-out",  // 가속도(timing-function)
-    pause: 4000,            // 정지시간(대기)
-    controls: true,        // prev, next 표시/비표시
-    pager: true,           // 하단 인디케이터 표시/비표시
-    autoHover: true        // 마우스올라가면 재생정지
-  });
-
 });
+
+
+
 
 
 

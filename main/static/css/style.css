@@ -291,17 +291,17 @@ body {
 /* 브랜드 목록 배경이미지 */
 #brand > .container > ul > li:nth-child(1) {
   /* 이미지 높이값: 340px */
-  background-image: url("../images/brand1.jpg");
+  background-image: url("../images/brand11.jpg");
   background-repeat: no-repeat;
 }
 #brand > .container > ul > li:nth-child(2) {
   /* 이미지 높이값: 340px */
-  background-image: url("../images/brand2.jpg");
+  background-image: url("../images/brand22.jpg");
   background-repeat: no-repeat;
 }
 #brand > .container > ul > li:nth-child(3) {
   /* 이미지 높이값: 340px */
-  background-image: url("../images/brand4.jpg");
+  background-image: url("../images/brand44.jpg");
   background-repeat: no-repeat;
 }
 
